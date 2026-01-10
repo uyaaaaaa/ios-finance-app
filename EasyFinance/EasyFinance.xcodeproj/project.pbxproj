@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EF6FBCC52F128FE200AD8947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6FBCAD2F128FE100AD8947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6FBCB42F128FE100AD8947;
+			remoteInfo = EasyFinance;
+		};
+		EF6FBCCF2F128FE200AD8947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF6FBCAD2F128FE100AD8947 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6FBCB42F128FE100AD8947;
+			remoteInfo = EasyFinance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6FBCB52F128FE100AD8947 /* EasyFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FBCC42F128FE200AD8947 /* EasyFinanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyFinanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FBCCE2F128FE200AD8947 /* EasyFinanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyFinanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6FBCED2F12908B00AD8947 /* Finance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Finance.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EF4117B32F1293D400D17BCC /* Exceptions for "EasyFinance" folder in "EasyFinance" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Widget/QuickInputWidget.swift,
+			);
+			target = EF6FBCB42F128FE100AD8947 /* EasyFinance */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EF6FBCB72F128FE100AD8947 /* EasyFinance */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EF4117B32F1293D400D17BCC /* Exceptions for "EasyFinance" folder in "EasyFinance" target */,
+			);
+			path = EasyFinance;
+			sourceTree = "<group>";
+		};
+		EF6FBCC72F128FE200AD8947 /* EasyFinanceTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EasyFinanceTests;
+			sourceTree = "<group>";
+		};
+		EF6FBCD12F128FE200AD8947 /* EasyFinanceUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EasyFinanceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6FBCB22F128FE100AD8947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCC12F128FE200AD8947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCCB2F128FE200AD8947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6FBCAC2F128FE100AD8947 = {
+			isa = PBXGroup;
+			children = (
+				EF6FBCB72F128FE100AD8947 /* EasyFinance */,
+				EF6FBCC72F128FE200AD8947 /* EasyFinanceTests */,
+				EF6FBCD12F128FE200AD8947 /* EasyFinanceUITests */,
+				EF6FBCB62F128FE100AD8947 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6FBCB62F128FE100AD8947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6FBCB52F128FE100AD8947 /* EasyFinance.app */,
+				EF6FBCC42F128FE200AD8947 /* EasyFinanceTests.xctest */,
+				EF6FBCCE2F128FE200AD8947 /* EasyFinanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6FBD022F12908B00AD8947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6FBCB42F128FE100AD8947 /* EasyFinance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6FBCD82F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinance" */;
+			buildPhases = (
+				EF6FBCB12F128FE100AD8947 /* Sources */,
+				EF6FBCB22F128FE100AD8947 /* Frameworks */,
+				EF6FBCB32F128FE100AD8947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EF6FBCB72F128FE100AD8947 /* EasyFinance */,
+			);
+			name = EasyFinance;
+			packageProductDependencies = (
+			);
+			productName = EasyFinance;
+			productReference = EF6FBCB52F128FE100AD8947 /* EasyFinance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF6FBCC32F128FE200AD8947 /* EasyFinanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6FBCDB2F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinanceTests" */;
+			buildPhases = (
+				EF6FBCC02F128FE200AD8947 /* Sources */,
+				EF6FBCC12F128FE200AD8947 /* Frameworks */,
+				EF6FBCC22F128FE200AD8947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6FBCC62F128FE200AD8947 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EF6FBCC72F128FE200AD8947 /* EasyFinanceTests */,
+			);
+			name = EasyFinanceTests;
+			packageProductDependencies = (
+			);
+			productName = EasyFinanceTests;
+			productReference = EF6FBCC42F128FE200AD8947 /* EasyFinanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF6FBCCD2F128FE200AD8947 /* EasyFinanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6FBCDE2F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinanceUITests" */;
+			buildPhases = (
+				EF6FBCCA2F128FE200AD8947 /* Sources */,
+				EF6FBCCB2F128FE200AD8947 /* Frameworks */,
+				EF6FBCCC2F128FE200AD8947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6FBCD02F128FE200AD8947 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EF6FBCD12F128FE200AD8947 /* EasyFinanceUITests */,
+			);
+			name = EasyFinanceUITests;
+			packageProductDependencies = (
+			);
+			productName = EasyFinanceUITests;
+			productReference = EF6FBCCE2F128FE200AD8947 /* EasyFinanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6FBCAD2F128FE100AD8947 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					EF6FBCB42F128FE100AD8947 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					EF6FBCC32F128FE200AD8947 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = EF6FBCB42F128FE100AD8947;
+					};
+					EF6FBCCD2F128FE200AD8947 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = EF6FBCB42F128FE100AD8947;
+					};
+				};
+			};
+			buildConfigurationList = EF6FBCB02F128FE100AD8947 /* Build configuration list for PBXProject "EasyFinance" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6FBCAC2F128FE100AD8947;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EF6FBCB62F128FE100AD8947 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EF6FBD022F12908B00AD8947 /* Products */;
+					ProjectRef = EF6FBCED2F12908B00AD8947 /* Finance.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EF6FBCB42F128FE100AD8947 /* EasyFinance */,
+				EF6FBCC32F128FE200AD8947 /* EasyFinanceTests */,
+				EF6FBCCD2F128FE200AD8947 /* EasyFinanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6FBCB32F128FE100AD8947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCC22F128FE200AD8947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCCC2F128FE200AD8947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6FBCB12F128FE100AD8947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCC02F128FE200AD8947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6FBCCA2F128FE200AD8947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6FBCC62F128FE200AD8947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6FBCB42F128FE100AD8947 /* EasyFinance */;
+			targetProxy = EF6FBCC52F128FE200AD8947 /* PBXContainerItemProxy */;
+		};
+		EF6FBCD02F128FE200AD8947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6FBCB42F128FE100AD8947 /* EasyFinance */;
+			targetProxy = EF6FBCCF2F128FE200AD8947 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF6FBCD62F128FE200AD8947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF6FBCD72F128FE200AD8947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6FBCD92F128FE200AD8947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6FBCDA2F128FE200AD8947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF6FBCDC2F128FE200AD8947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyFinance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EasyFinance";
+			};
+			name = Debug;
+		};
+		EF6FBCDD2F128FE200AD8947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyFinance.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EasyFinance";
+			};
+			name = Release;
+		};
+		EF6FBCDF2F128FE200AD8947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyFinance;
+			};
+			name = Debug;
+		};
+		EF6FBCE02F128FE200AD8947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CJ7R7SP9L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yasuto.ueda.EasyFinanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyFinance;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6FBCB02F128FE100AD8947 /* Build configuration list for PBXProject "EasyFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FBCD62F128FE200AD8947 /* Debug */,
+				EF6FBCD72F128FE200AD8947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6FBCD82F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FBCD92F128FE200AD8947 /* Debug */,
+				EF6FBCDA2F128FE200AD8947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6FBCDB2F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FBCDC2F128FE200AD8947 /* Debug */,
+				EF6FBCDD2F128FE200AD8947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6FBCDE2F128FE200AD8947 /* Build configuration list for PBXNativeTarget "EasyFinanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6FBCDF2F128FE200AD8947 /* Debug */,
+				EF6FBCE02F128FE200AD8947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6FBCAD2F128FE100AD8947 /* Project object */;
+}
