@@ -34,6 +34,11 @@ struct TransactionRowView: View {
                 amount: viewModel.amount,
                 style: .compact
             )
+            
+            // Navigation Indicator
+            Image(systemName: "chevron.right")
+                .font(.caption)
+                .foregroundColor(.gray)
         }
     }
 }
