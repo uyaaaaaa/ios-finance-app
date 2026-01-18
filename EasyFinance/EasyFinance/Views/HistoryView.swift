@@ -18,7 +18,7 @@ struct HistoryView: View {
                                 Button {
                                     editingTransaction = transaction
                                 } label: {
-                                    TransactionRowView(transaction: transaction, showTime: false)
+                                    TransactionRowView(transaction: transaction, dateStrategy: TimeOnlyStrategy())
                                 }
                                 .buttonStyle(.plain)
                                 .swipeActions(edge: .trailing, allowsFullSwipe: true) {

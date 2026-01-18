@@ -2,35 +2,34 @@ import SwiftUI
 
 /// 再利用可能なカテゴリアイコン表示コンポーネント
 struct CategoryIconView: View {
-    let iconSymbol: String
-    let colorHex: String
-    let size: CGFloat
-    let showCircleBackground: Bool
+    let viewModel: CategoryIconViewModel
     
     init(iconSymbol: String, colorHex: String, size: CGFloat = 30, showCircleBackground: Bool = false) {
-        self.iconSymbol = iconSymbol
-        self.colorHex = colorHex
-        self.size = size
-        self.showCircleBackground = showCircleBackground
+        self.viewModel = CategoryIconViewModel(
+            iconSymbol: iconSymbol,
+            colorHex: colorHex,
+            size: size,
+            showCircleBackground: showCircleBackground
+        )
     }
     
     var body: some View {
         ZStack {
-            if showCircleBackground {
+            if viewModel.showCircleBackground {
                 Circle()
-                    .fill(Color(colorHex))
-                    .frame(width: size, height: size)
+                    .fill(viewModel.circleColor)
+                    .frame(width: viewModel.size, height: viewModel.size)
                 
-                Image(systemName: iconSymbol)
-                    .font(.system(size: size * 0.5, weight: .semibold))
-                    .foregroundColor(.white)
+                Image(systemName: viewModel.iconSymbol)
+                    .font(viewModel.iconFont)
+                    .foregroundColor(viewModel.iconColor)
             } else {
-                Image(systemName: iconSymbol)
-                    .font(.system(size: size * 0.8))
-                    .foregroundColor(Color(colorHex))
-                    .frame(width: size, height: size)
+                Image(systemName: viewModel.iconSymbol)
+                    .font(viewModel.iconFont)
+                    .foregroundColor(viewModel.iconColor)
+                    .frame(width: viewModel.size, height: viewModel.size)
             }
         }
-        .frame(width: size, height: size)
+        .frame(width: viewModel.size, height: viewModel.size)
     }
 }

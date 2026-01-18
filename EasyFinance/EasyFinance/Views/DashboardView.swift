@@ -100,7 +100,7 @@ struct DashboardView: View {
                         Button {
                             editingTransaction = transaction
                         } label: {
-                            TransactionRowView(transaction: transaction, showTime: true)
+                            TransactionRowView(transaction: transaction, dateStrategy: DateTimeStrategy())
                         }
                         .buttonStyle(.plain)
                         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
