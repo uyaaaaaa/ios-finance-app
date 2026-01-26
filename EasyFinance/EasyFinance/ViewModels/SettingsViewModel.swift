@@ -1,5 +1,6 @@
 import Combine
 import Foundation
+import SwiftData
 import SwiftUI
 
 // Settings ViewModel
@@ -70,5 +71,30 @@ class SettingsViewModel: BaseViewModel {
         } catch {
             handleError(error, context: "SettingsViewModel: Failed to delete category")
         }
+    }
+    
+    func deleteCategory(at offsets: IndexSet) {
+        offsets.forEach { index in
+            guard index < categories.count else { return }
+            let category = categories[index]
+            deleteCategory(category: category)
+        }
+    }
+
+    func moveCategory(from source: IndexSet, to destination: Int) {
+        var updatedCategories = categories
+        updatedCategories.move(fromOffsets: source, toOffset: destination)
+        
+        for (index, category) in updatedCategories.enumerated() {
+            category.sortOrder = index
+        }
+        
+        do {
+            try repository.save()
+        } catch {
+            handleError(error, context: "SettingsViewModel: Failed to save category order")
+        }
+        
+        self.categories = updatedCategories
     }
 }
