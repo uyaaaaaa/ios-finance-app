@@ -1,13 +1,19 @@
 import SwiftUI
 
+enum CategoryManagementMode {
+    case none
+    case editing
+    case adding
+}
+
 struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
 
     @State private var budgetInput: String = ""
     @State private var isEditingBudget = false
-
     @State private var showingAddCategory = false
     @State private var newCategoryName = ""
+    @State private var categoryMode: CategoryManagementMode = .none
 
     var body: some View {
         NavigationStack {
@@ -35,7 +41,7 @@ struct SettingsView: View {
                     }
                 }
 
-                Section("カテゴリ管理") {
+                Section {
                     ForEach(viewModel.categories) { category in
                         HStack {
                             CategoryIconView(
@@ -44,21 +50,42 @@ struct SettingsView: View {
                                 size: 30
                             )
                             Text(category.name)
-                                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                                    Button(role: .destructive) {
-                                        viewModel.deleteCategory(category: category)
-                                    } label: {
-                                        Label("", systemImage: "trash")
-                                    }
-                                }
+                            Spacer()
                         }
                     }
-
-                    Button {
-                        showingAddCategory = true
-                    } label: {
-                        Label("カテゴリを追加", systemImage: "plus")
+                    .onDelete { indices in
+                        viewModel.deleteCategory(at: indices)
                     }
+                    .onMove { indices, newOffset in
+                        viewModel.moveCategory(from: indices, to: newOffset)
+                    }
+                    .deleteDisabled(categoryMode != .editing)
+                    .moveDisabled(categoryMode != .editing)
+                } header: {
+                    HStack {
+                        Text("カテゴリ管理")
+                        Spacer()
+                        Menu {
+                            Button {
+                                categoryMode = .editing
+                            } label: {
+                                Label("編集", systemImage: "pencil")
+                            }
+                            Button {
+                                categoryMode = .adding
+                                showingAddCategory = true
+                            } label: {
+                                Label("追加", systemImage: "plus")
+                            }
+
+                        } label: {
+                            Image(systemName: "ellipsis")
+                                .foregroundColor(.gray)
+                                .frame(width: 44, height: 44)
+                                .contentShape(Rectangle())
+                        }
+                    }
+                    .textCase(nil)
                 }
 
                 Section("アプリについて") {
@@ -67,7 +94,17 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("設定")
+            .environment(\.editMode, .constant(categoryMode == .editing ? .active : .inactive))
             .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    if categoryMode == .editing {
+                        Button("完了") {
+                            categoryMode = .none
+                        }
+                    }
+                }
+            }
             .alert("カテゴリ追加", isPresented: $showingAddCategory) {
                 TextField("カテゴリ名", text: $newCategoryName)
                 Button("追加") {
