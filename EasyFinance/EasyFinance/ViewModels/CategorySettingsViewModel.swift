@@ -3,10 +3,9 @@ import Foundation
 import SwiftData
 import SwiftUI
 
-// Settings ViewModel
+// CategorySettings ViewModel
 @MainActor
-class SettingsViewModel: BaseViewModel {
-    @Published private(set) var budgets: [Budget] = []
+class CategorySettingsViewModel: BaseViewModel {
     @Published private(set) var categories: [Category] = []
 
     override init(
@@ -26,29 +25,9 @@ class SettingsViewModel: BaseViewModel {
 
     private func fetchData() {
         do {
-            self.budgets = try repository.fetchBudgets()
             self.categories = try repository.fetchAll()
         } catch {
-            handleError(error, context: "SettingsViewModel: Error fetching data")
-        }
-    }
-
-    // MARK: - Budget Logic
-    var currentBudgetAmount: Int {
-        budgets.first?.amount ?? 0
-    }
-
-    func saveBudget(amount: Int) {
-        do {
-            if let existing = budgets.first {
-                existing.amount = amount
-                try repository.save(existing)
-            } else {
-                let newBudget = Budget(amount: amount)
-                try repository.save(newBudget)
-            }
-        } catch {
-            handleError(error, context: "SettingsViewModel: Failed to save budget")
+            handleError(error, context: "CategorySettingsViewModel: Error fetching data")
         }
     }
 
@@ -61,7 +40,7 @@ class SettingsViewModel: BaseViewModel {
         do {
             try repository.add(newCategory)
         } catch {
-            handleError(error, context: "SettingsViewModel: Failed to add category")
+            handleError(error, context: "CategorySettingsViewModel: Failed to add category")
         }
     }
 
@@ -69,7 +48,7 @@ class SettingsViewModel: BaseViewModel {
         do {
             try repository.delete(category)
         } catch {
-            handleError(error, context: "SettingsViewModel: Failed to delete category")
+            handleError(error, context: "CategorySettingsViewModel: Failed to delete category")
         }
     }
     
@@ -92,7 +71,7 @@ class SettingsViewModel: BaseViewModel {
         do {
             try repository.save()
         } catch {
-            handleError(error, context: "SettingsViewModel: Failed to save category order")
+            handleError(error, context: "CategorySettingsViewModel: Failed to save category order")
         }
         
         self.categories = updatedCategories
