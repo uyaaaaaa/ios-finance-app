@@ -34,42 +34,12 @@ struct CategoryListSettingsView: View {
             .deleteDisabled(categoryMode != .editing)
             .moveDisabled(categoryMode != .editing)
         } header: {
-            HStack {
-                Text("カテゴリ管理")
-                Spacer()
-                if categoryMode == .editing {
-                    Button {
-                        categoryMode = .none
-                    } label: {
-                        Image(systemName: "checkmark")
-                            .foregroundColor(.accentColor)
-                            .frame(width: 44, height: 44)
-                            .contentShape(Rectangle())
-                    }
-                } else {
-                    Menu {
-                        Button {
-                            categoryMode = .editing
-                        } label: {
-                            Label("編集", systemImage: "pencil")
-                        }
-                        Button {
-                            categoryMode = .adding
-                            showingAddCategory = true
-                        } label: {
-                            Label("追加", systemImage: "plus")
-                        }
-
-                    } label: {
-                        Image(systemName: "ellipsis")
-                            .foregroundColor(.gray)
-                            .frame(width: 44, height: 44)
-                            .contentShape(Rectangle())
-                    }
-                }
-            }
-            .textCase(nil)
+            CategorySectionHeader(
+                categoryMode: $categoryMode,
+                onAdd: { showingAddCategory = true }
+            )
         }
+        .textCase(nil)
         .alert("カテゴリ追加", isPresented: $showingAddCategory) {
             TextField("カテゴリ名", text: $newCategoryName)
             Button("追加") {
@@ -77,6 +47,48 @@ struct CategoryListSettingsView: View {
                 newCategoryName = ""
             }
             Button("キャンセル", role: .cancel) {}
+        }
+    }
+}
+
+struct CategorySectionHeader: View {
+    @Binding var categoryMode: CategoryManagementMode
+    var onAdd: () -> Void
+
+    var body: some View {
+        HStack {
+            Text("カテゴリ管理")
+            Spacer()
+            if categoryMode == .editing {
+                Button {
+                    categoryMode = .none
+                } label: {
+                    Image(systemName: "checkmark")
+                        .foregroundColor(.accentColor)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+            } else {
+                Menu {
+                    Button {
+                        categoryMode = .editing
+                    } label: {
+                        Label("編集", systemImage: "pencil")
+                    }
+                    Button {
+                        categoryMode = .adding
+                        onAdd()
+                    } label: {
+                        Label("追加", systemImage: "plus")
+                    }
+
+                } label: {
+                    Image(systemName: "ellipsis")
+                        .foregroundColor(.gray)
+                        .frame(width: 44, height: 44)
+                        .contentShape(Rectangle())
+                }
+            }
         }
     }
 }
